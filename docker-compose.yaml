@@ -1,0 +1,9 @@
+services:
+  node:
+    image: tharsishq/evmos:v20.0.0
+    network_mode: host
+    volumes:
+      - ./data:/data
+      - ./entrypoint.sh:/entrypoint.sh
+    entrypoint: /entrypoint.sh
+    command: start

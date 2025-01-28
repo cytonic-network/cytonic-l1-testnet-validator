@@ -40,4 +40,4 @@ When staking, find out stake amount of the last validator in current validator s
 
 ## ❓ Troubleshooting
 
-- If you have `rpc error: code = Unknown desc = unknown query path: unknown request` error when you are trying to send tx, and if you are using `--gas auto` flag - check that `[api]` module is enabled in `data/config/app.toml`
+- If you have `rpc error: code = Unknown desc = unknown query path: unknown request` error when you are trying to send tx, and if you are using `--gas auto` flag - check that `[api]` module is enabled in `data/config/app.toml`, as it uses API server for determining sufficient amount of gas for transaction.

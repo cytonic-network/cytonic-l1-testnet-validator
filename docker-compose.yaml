@@ -1,6 +1,6 @@
 services:
   node:
-    image: tharsishq/evmos:v20.0.0
+    image: ghcr.io/cytonic-network/evmos:v20.0.0
     network_mode: host
     volumes:
       - ./data:/data

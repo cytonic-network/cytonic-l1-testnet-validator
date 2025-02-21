@@ -2,7 +2,7 @@
 
 SEED_NODES="7f4b8fdde3b6dc62f40cab3b18fd36b5e376729d@52.201.52.98:26656"
 
-./scripts/run-node-command.sh node init $1
+./scripts/evmosd-run.sh init $1
 cp genesis.json data/config/
 
 sed -i "s/seeds = \"\"/seeds = \"$SEED_NODES\"/" data/config/config.toml
